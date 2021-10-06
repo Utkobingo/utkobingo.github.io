@@ -1,0 +1,52 @@
+body { 
+    text-align: center;
+    font-family: Verdana, sans-serif; 
+    background: #ffffff;
+}
+
+p { color: #0db14b; }
+
+a { color: #054d21; }
+
+a:hover { color: #ffb219; }
+
+a, a:hover { text-decoration: none; }
+
+th, td {
+    border: 2.5px solid black;
+    text-align: center;
+}
+
+.square {
+    font-size: 20px;
+	background-color:#ffffff;
+	width: 100%;
+	padding: 20px;
+	border: none;
+}
+
+#bingo-card {
+    margin: 50px auto;
+    text-align: center;
+    width: 2em;
+    height: 2em;
+    border-collapse: collapse;
+    background: #d3d3d3;
+}
+
+.header {
+    background: #ffc60a;
+    font-size: 20px;
+}
+
+#goals, #actions { 
+    color: #ffffff; 
+    text-align: center;
+}
+
+.square { cursor: pointer; }
+
+#bingo {
+	color: red;
+	font-size: 30px;
+}

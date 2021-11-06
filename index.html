@@ -1,68 +1,18 @@
 <!DOCTYPE html>
-<html lang="ru">
-    <head>
-        <title>Utko Bingo</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="css/style.css">
-        <script src="bingo.js"></script>
-    </head>
-    <body onload="init()">
-        <div id="bingo-content">
-            <table id="bingo-card">
-			<tr>
-                    <th class="header"></th>
-                    <th class="header">U</th>
-                    <th class="header">T</th>
-                    <th class="header">K</th>
-                    <th class="header">O</th>
-                </tr>
-                <tr>
-                    <th class="header">B</th>
-                    <th class="header">I</th>
-                    <th class="header">N</th>
-                    <th class="header">G</th>
-                    <th class="header">O</th>
-                </tr>
-                <tr>
-                    <td><input id="sq0" class="square" type="button" value="&nbsp;" onclick="selectSquare('sq0')"></td>
-                    <td><input id="sq1" class="square" type="button" value="&nbsp;" onclick="selectSquare('sq1')"></td>
-                    <td><input id="sq2" class="square" type="button" value="&nbsp;" onclick="selectSquare('sq2')"></td>
-                    <td><input id="sq3" class="square" type="button" value="&nbsp;" onclick="selectSquare('sq3')"></td>
-                    <td><input id="sq4" class="square" type="button" value="&nbsp;" onclick="selectSquare('sq4')"></td>
-                </tr>
-                <tr>
-                    <td><input id="sq5" class="square" type="button" value="&nbsp;" onclick="selectSquare('sq5')"></td>
-                    <td><input id="sq6" class="square" type="button" value="&nbsp;" onclick="selectSquare('sq6')"></td>
-                    <td><input id="sq7" class="square" type="button" value="&nbsp;" onclick="selectSquare('sq7')"></td>
-                    <td><input id="sq8" class="square" type="button" value="&nbsp;" onclick="selectSquare('sq8')"></td>
-                    <td><input id="sq9" class="square" type="button" value="&nbsp;" onclick="selectSquare('sq9')"></td>
-                </tr>
-                <tr>
-                    <td><input id="sq10" class="square" type="button" value="&nbsp;" onclick="selectSquare('sq10')"></td>
-                    <td><input id="sq11" class="square" type="button" value="&nbsp;" onclick="selectSquare('sq11')"></td>
-                    <td><input id="sq12" class="square" type="button" value="&nbsp;" onclick="selectSquare('sq12')"></td>
-                    <td><input id="sq13" class="square" type="button" value="&nbsp;" onclick="selectSquare('sq13')"></td>
-                    <td><input id="sq14" class="square" type="button" value="&nbsp;" onclick="selectSquare('sq14')"></td>
-                </tr>
-                <tr>
-                    <td><input id="sq15" class="square" type="button" value="&nbsp;" onclick="selectSquare('sq15')"></td>
-                    <td><input id="sq16" class="square" type="button" value="&nbsp;" onclick="selectSquare('sq16')"></td>
-                    <td><input id="sq17" class="square" type="button" value="&nbsp;" onclick="selectSquare('sq17')"></td>
-                    <td><input id="sq18" class="square" type="button" value="&nbsp;" onclick="selectSquare('sq18')"></td>
-                    <td><input id="sq19" class="square" type="button" value="&nbsp;" onclick="selectSquare('sq19')"></td>
-                </tr>
-                <tr>
-                    <td><input id="sq20" class="square" type="button" value="&nbsp;" onclick="selectSquare('sq20')"></td>
-                    <td><input id="sq21" class="square" type="button" value="&nbsp;" onclick="selectSquare('sq21')"></td>
-                    <td><input id="sq22" class="square" type="button" value="&nbsp;" onclick="selectSquare('sq22')"></td>
-                    <td><input id="sq23" class="square" type="button" value="&nbsp;" onclick="selectSquare('sq23')"></td>
-                    <td><input id="sq24" class="square" type="button" value="&nbsp;" onclick="selectSquare('sq24')"></td>
-                </tr>
-            </table>
-        </div>
-        <div id="buttons">
-            <div id="bingo"></div>
-        </div>
-        <p><a href="#" onclick="generateGameField()">Нажми сюда для новой игры</a></p>
-    </body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UtkoBingo</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section class="content">
+      <h1><span>utko</span><span>bingo</span></h1>
+      <div class="gamefield" id="gamefield"></div>
+    </section>
+    <script src="words.js"></script>
+    <script src="js/bingo.js"></script>
+  </body>
 </html>

@@ -1,52 +1,133 @@
-body { 
-    text-align: center;
-    font-family: Verdana, sans-serif; 
-    background: #ffffff;
+html {
+  background-image: url("../img/bg.jpg");
+  background-attachment: fixed;
+  background-size: 100%;
+}
+html,
+body {
+  min-height: 100%;
+  min-width: 100%;
 }
 
-p { color: #0db14b; }
-
-a { color: #054d21; }
-
-a:hover { color: #ffb219; }
-
-a, a:hover { text-decoration: none; }
-
-th, td {
-    border: 2.5px solid black;
-    text-align: center;
+.content {
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: linear-gradient(rgba(0, 0, 0, 0.9) 60%, rgba(0, 0, 0, 0.5));
+  color: #ffffff;
 }
 
-.square {
-    font-size: 20px;
-	background-color:#ffffff;
-	width: 100%;
-	padding: 20px;
-	border: none;
+.gamefield {
+  width: 550px;
+  height: 550px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.4);
+  padding: 20px 20px;
+  margin: 30px auto;
 }
 
-#bingo-card {
-    margin: 50px auto;
-    text-align: center;
-    width: 2em;
-    height: 2em;
-    border-collapse: collapse;
-    background: #d3d3d3;
+.gamecell {
+  display: flex;
+  box-sizing: border-box;
+  width: 120px;
+  height: 120px;
+  padding: 5px;
+  border: 1px solid #fff;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  box-shadow: 5px 5px 5px #333;
 }
 
-.header {
-    background: #ffc60a;
-    font-size: 20px;
+.selected {
+  background: radial-gradient(rgba(13, 177, 75, 1), rgba(13, 177, 75, 0));
 }
 
-#goals, #actions { 
-    color: #ffffff; 
-    text-align: center;
+.win {
+  background-color: #ffc709;
 }
 
-.square { cursor: pointer; }
+.content h1 {
+  display: flex;
+  height: 45px;
+  padding-top: 10px;
+  justify-content: center;
+  align-items: center;
+}
 
-#bingo {
-	color: red;
-	font-size: 30px;
+.content h1 span {
+  font-family: serif;
+  font-size: 32px;
+  text-transform: uppercase;
+  letter-spacing: 30px;
+}
+
+.content h1 span:first-child {
+  color: #ffc709;
+}
+
+.content h1 span:last-child {
+  color: #0db14b;
+  margin-right: -30px;
+}
+
+.win-phrase {
+  display: flex;
+  justify-content: center;
+  font-family: serif;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  background: linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: rainbow 20s ease infinite;
+  animation: rainbow 20s ease infinite;
+}
+
+@-webkit-keyframes rainbow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.newgame {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #ffc709;
+  text-decoration: none;
+  font-size: 21px;
+}
+
+.newgame:hover {
+  color: #0db14b;
 }
